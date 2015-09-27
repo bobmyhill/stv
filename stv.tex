@@ -1,6 +1,7 @@
 \documentclass[review]{elsarticle}
 
-\usepackage{lineno,hyperref}
+\usepackage{lineno}
+\usepackage[hidelinks]{hyperref}
 \usepackage{pdflscape}
 \modulolinenumbers[5]
 
@@ -42,7 +43,7 @@
 
 \begin{frontmatter}
 
-\title{Quenchable water-rich aluminous post-stishovite, and implications for seismic scatterers in the lower mantle}
+\title{Quenchable water-rich aluminous post-stishovite, the SiO$_2$ - phase H - $\delta$AlOOH solid solution, and seismic scatterers in the lower mantle}
 %\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
 
 %% Group authors per affiliation:
@@ -65,22 +66,149 @@ high pressure \sep post-stishovite \sep water \sep slab \sep scatterers
 
 \section{Introduction}
 
-The stishovite structure (tetragonal, P4$_2$/mnm) distorts slightly to the CaCl$_2$-type structure (orthorhombic, Pnnm) at 50 GPa. A few studies have suggested that the CaCl$_2$ type may undergo a phase transition to a mineral named seifertite with the scrutinyite ($\alpha$-PbO$_2$ )structure (orthorhombic, Pbcn or Pb2n) within mantle pressures
+The stishovite structure (tetragonal, P4$_2$/mnm, no. 136) undergoes a weak first-order transition \citep{AFGH1998, HSCHMK2000} with second-order characteristics of Landau/ferroelastic type \citep{TY1989, CHM2000} to the CaCl$_2$-type structure (orthorhombic, Pnnm, no. 58). This transition occurs at pressures of $\sim$50 GPa at room temperature \citep{KCHM1995, AFGH1998}, increasing with temperature to $\sim$70 GPa at 2200 K \citep{HTSO2005,Nomuraetal2010}. A somewhat higher dT/dP was observed by \cite{OHMI2002}. The nature of this transition means that the shear modulus $C_{11}$ - $C_{12}$ decreases with increasing pressure and vanishes at the transition pressure, as observed in spectroscopic and high pressure diffraction studies \citep{KCHM1995, SDL2002}. The stishovite-post-stishovite transition is therefore of interest to seismologists, as it should produce zones of low shear wave velocity which act as scatterers in the deep mantle.
 
-\cite{TY1989}
-\cite{AFGH1998}
-\cite{KCHM1995}
-\cite{OHMI2002}
-\cite{Lakshtanovetal2007}
+% Nonhydrostaticity
+Deviatoric stresses in the diamond anvil cell can cause large variations in the pressure of the stishovite to post-stishovite transition. Nonhydrostaticity greatly decreases the transition pressure from 60 GPa \citep{AAML2003, HSCHMK2000} to 40 GPa \citep{KMH1996, SAB2012}. Molecular and lattice dynamic studies suggest that only 1.5--2.5 GPa differential stress is required to cause this decrease in pressure \citep{DB1996}.
+
+% Adding aluminium
+Aluminium has a profound effect on the stability of the post-stishovite phase. Al$_2$O$_3$ can be incorporated into stishovite by the substitution of Si by Al with the formation of oxygen vacancies \citep{SSP1995,HTSO2005,BBB2006}:
+
+\begin{equation}
+2Si^x_{Si} + O^x_O + Al_2O_3 \rightarrow 2Al^/_{Si} + V^{..}_O + 2SiO_2
+\end{equation}
+
+An alternative mechanism, where charge balance is accomplished by Al occupying the large interstitial sites is probably minor \cite{SSP1995}:
+\begin{equation}
+3Si^x_{Si} + 2Al_2O_3 \rightarrow 3Al^/_{Si} + Al^{...}_i + 3SiO_2
+\end{equation}
+
+It has been argued that the addition of 4 wt\% Al$_2$O$_3$ in the absence of any other components causes the transition to shift from 50 to 23 GPa at room temperature by inducing a `chemical pressure' \citep{BAAG2009}. In stishovite, there is one octahedral cation position (Wyckoff notation 2a) located at the origin and the body center of the tetragonal cell. One oxygen at position 4f creates a moderately distorted octahedron with point symmetry mmm. The addition of Al \emph{decreases} distortion of this octahedron \citep{SSP1995}. The addition of Al should therefore have little effect on the stishovite-post-stishovite transition \citep{Panero2006}. The results of \cite{BAAG2009} are therefore unexpected; it seems possible that another component (such as H$_2$O) or deviatoric stress acted to stabilise the CaCl$_2$ structure.
+
+It has also been suggested that the coupled substitution of Al and H may have a significant effect on the transition pressure. \cite{Lakshtanovetal2007} has shown that the addition of 6 wt\% Al$_2$O$_3$ and 0.24 wt\% H$_2$O reduces the transition pressure to 24 GPa at room temperature. The substitution mechanism in this case is probably
+
+\begin{equation}
+2Si^x_{Si} + Al_2O_3 + H_2O \rightarrow 2Al^/_{Si} + 2H^{.}_i + 2SiO_2
+\end{equation}
+
+Given that high pressure $\delta$-AlOOH is isostructural with the post-stishovite phase above ca. 19 GPa \citep{SKVO2008, KSN2014}, after transforming from the P2$_1$nm structure (no. 31) \citep{SOK2000, KKSOK2006, VSKOS2007}, it seems sensible to suggest that addition of an AlOOH component lowers the transition pressure. Ab initio calculations support this suggestion \citep{UKHRW2015}. The equilibrium transition for 6.25 mol\% AlOOH is at ca. 15 GPa at room temperature, implying an even more marked reduction than observed in the experimental data \citep{Lakshtanovetal2007}. This could be due to inaccuracies in the ab-initio data, or metastable preservation of the tetragonal phase in the experiments. \cite{UKHRW2015} also suggest that the larger number of hydrogen sites stabilises the tetragonal structure at high temperatures, changing the slope of the transition. The tetragonal $\rightarrow$ orthorhombic transition in their simulations is associated with splitting of the hydrogen sites on the equatorial oxygens into two groups, one occupied and the other unoccupied.  Additionally, the redistribution of hydrogens among equatorial oxygens in the tetragonal $\rightarrow$ orthorhombic transition implies that it is now first order and no longer ferroelastic. Anelasticity by hydrogen hopping seems a plausible alternative to reduce seismic body wave speeds. %  \citep{LW2008, RMC2009}
+
+
+Despite this, H$_2$O contents in tetragonal stishovite measured using the FTIR calibration of \cite{PMH1993} are less than 20\% of that expected from an AlOOH component \citep{PBJ2003, BBB2006, LKSOLBI2007} and in MORB compositions \citep{CK2002}.
+
+This study was designed to investigate water solubility in Al-rich stishovite by synthesising crystals at relatively high temperature \citep{Ono1999}. In doing so, we created and quenched an Al-H rich post-stishovite phase.
+
+
+\subsection{Hysteresis vs. stabilisation}
+\citep{UKHRW2015}
+
+
+\subsection{Mechanism of shear wave velocity reduction}
+Ferroelasticity \citep{CHM2000}
+Snoek relaxation (anelasticity via H mobility) \citep{Snoek1941, NB1972, MCDBT2007}.
+
+
+%\cite{SYOGOTK2008}
+
+
+\subsection{Mechanisms of Al-, H incorporation}
+We found that hydrogen was most stable when bonded to the apical oxygen of the Al-octahedron, with the hydroxyl bond along $\langle$110$\rangle$ and co-planar with Al \citep{PS2004}.
+
+The relatively short O-O distance and correspondingly long O-H distance in the stishovite-AlOOH solid solution would lead one to expect a low OH stretching frequency compared to other nominally anhydrous minerals, consistent with the value of 3111 cm$^{-1}$ observed by \cite{PMH1993}.
+
+Symmetric bonding \citep{PS2004}
+
+
+
+
+
+
+\subsection{Water concentrations in stishovite}
+\cite{PMH1993} calibration
+\cite{PBJ2003}
+\cite{BBB2006},  
+\cite{LKSOLBI2007},
+MORB \cite{CK2002},
+
+
+\subsection{Elastic properties}
 \cite{Lakshtanovetal2005}
-\cite{SAP2012}
-\cite{PS2004}
-\cite{BBB2006}
-\cite{LKSOLBI2007}
-\cite{CK2002}
+\cite{OSHKKK2002}
+\cite{SKNNFUIOY2009}
+
+\subsection{Phase relations in the lower mantle}
+\cite{IR1993}
+\cite{Wood2000}
+\cite{Hirose2002}
+\cite{Walteretal2015}
+\cite{LO2005}
+
+\subsection{Datasets and modelling}
 \cite{HP2011}
 \cite{SLB2011}
 \cite{CHRU2014}
+
+\subsubsection{Elastic properties AlOOH}
+\cite{Suzuki2009}
+\citep{SKVO2008}
+\cite{VOK2002}
+\cite{TT2009}
+\cite{LAJ2006}
+
+\section{The solid solution (MgSi, Fe$^{2+}$Si, Fe$^{3+}_2$, Al$_2$)O$_4$H$_2$}
+\subsection{Endmembers}
+\subsubsection{SiO$_2$}
+
+\subsubsection{$\delta$-AlOOH}
+
+\subsubsection{$\delta$-FeOOH}
+Pnma (no.62 $\alpha$) to P2$_{1}$nm (no. 31, $\varepsilon$) \citep{GJK2008} to Pnnm (no. 58, high spin) to Pnnm (no. 58, low spin) \citep{GQSPM2013}
+
+\subsubsection{``Phase H''}
+The addition of an MgSiO$_4$H$_2$ component also stabilises the Pnnm structure in stishovite \citep{KSK2011}. A previous candidate space group \citep[Pnn2; no. 34][]{KKSOK2004} is now thought to be unlikely.
+
+Stability \citep{OAKSH2014}
+Ab initio P2/m (no. 10) \citep{Tsuchiya2013}
+Pnnm (no. 58) \citep{BNTI2014}
+P2$_1$nm (no. 31) \citep{NITTNFH2014}
+
+\cite{KKSOK2004} suggested a hypothetical high pressure form of Mg(OH)$_2$ also in the space group Pnnm from Mg incorporation.
+Importance of the AlOOH - phase H solid solution \cite{OOSMHON2014}
+
+\section{Other phases}
+\subsection{Water in seifertite}
+A few studies have suggested that the CaCl$_2$ type may undergo a phase transition to a mineral named seifertite with the scrutinyite ($\alpha$-PbO$_2$) structure (orthorhombic, Pbcn, no. 60 or Pb2n) within mantle pressures.
+
+AlOOH to Pa$\bar{3}$ \citep{TT2011}
+
+\subsection{$\delta$-Al(OH)$_3$}
+P2$_1$2$_1$2$_1$ (no. 19) to Pnma (no. 62) at $\sim$67 GPa \cite{MKISGY2011}.
+\cite{XK2007}
+
+\subsection{Ca-perovskite}
+Tetragonal (probably P4/mmm, no. 123) \citep{SJD2002} $\rightarrow$ Cubic (Pm3m) for low Al contents. For pure CaSiO$_3$, transition occurs at ca. 580 K at 50 GPa \citep{KHOSO2004, KHSOD2007}
+
+Orthorhombic (Pbnm) $\rightarrow$ Cubic (Pm3m) for Al-rich CaSiO$_3$ \citep{KHOSO2004}. At 5.9 wt\%, transition occurs at ca. 1840 K at 50 GPa \citep{KHOSO2004}.
+
+ In a pyrolitic mantle composition, the CaSiO$_3$ perovskite contains 1.0--2.3 wt.\% Al$_2$O$_3$ at upper mantle pressures and somewhat less (0.7--1.6 wt.\%) at lower mantle pressures \citep{KFS1998, Wood2000, Hirose2002}
+
+ In a MORB composition, 2.0--4.8 wt.\% and 1.2--4.5 wt.\% Al$_2$O$_3$ are included in CaSiO$_3$-rich perovskite in garnetite and perovskitite lithologies, respectively \citep{KFS1994, IR1993, HF2002}.
+
+
+\subsection{Reaction with metal}
+\citep{Terasakietal2012}
+
+\section{Lower mantle scatterers}
+\cite{DAD2013}
+\cite{KH1998,KH2003}
+\cite{NKF2003}
+\cite{KBSW2001}
+\cite{Kaneshima2009}
+\cite{BSBIWJ2010}
+\cite{KHSBIWJ2010}
+\cite{BR2014}
+\cite{AHOHOM2013}
+\cite{Mookherjee2011}
 
 \section{Experimental and analytical techniques}
 

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+gmtset FONT_ANNOT_PRIMARY	   = 10p,4,black
+gmtset FONT_LABEL        	   = 14p,4,black
+
+base="stv_compositions"
+
+psbasemap -JX10 -R0/0.15/0/0.03 -Ba0.2f0.1:"Al@-2@-3 (wt %)":/a5f1:"H@-2@-O (wt %)":SWen -K -P > ${base}.ps
+
+awk 'NR>1 {print $9, $11, $9-$10, $9, $9, $9+$10, $11-$12, $11, $11, $11+$12}' Al_H2O_contents.dat |
+
